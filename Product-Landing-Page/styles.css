@@ -1,0 +1,120 @@
+body{
+background-color:black;  
+margin: 0px;
+    border: 0px;
+}
+#header{
+    background-color:white;
+    position:sticky;
+    top: 0px;
+    
+}
+#product{
+    border: 3px solid;
+    padding: 5px;
+    margin:10px;
+    float:left;
+
+}
+#contactus{
+    border: 3px solid;
+    padding: 5px;
+    margin:10px;
+    float:left;
+
+}
+#contactus a:hover{
+    color:white;
+    background-color:black;
+}
+#aboutus a:hover{
+    color:white;
+    background-color:black;
+}
+#product a:hover{
+    color:white;
+    background-color:black;
+}
+#aboutus{
+    border: 3px solid;
+    padding: 5px;
+    margin:10px;
+    float:left;
+
+}
+#header-img{
+height: 50px;
+width: 100px;
+
+}
+#nav-bar{
+    float:right;
+}
+
+.carausalimg{
+   display:flex;
+}
+
+
+#cara-img{
+   margin-left: 20px;
+   margin-right:20px;
+   
+}
+.video{
+    display:flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+
+.form{
+    display:flex;
+    justify-content:center;
+}
+
+p{
+    font-size:10px;
+    text-align:center;
+    color:whitesmoke;
+}
+
+#formheading{
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.label{
+    font-size:20px;
+    color:wheat;
+    margin-left:20px;
+}
+
+form{
+    width: 50%;
+  
+}
+
+.products{
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+    
+    margin: 10px;
+}
+
+
+
+@media screen and (max-width:400px){
+    p{
+        color:chartreuse;
+        font-size: 12px;
+    }
+    #cara-img{
+        justify-content:center;
+        margin: 0px;
+    }
+
+    
+}
