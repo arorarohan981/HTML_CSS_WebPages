@@ -1,19 +1,154 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
 
-        <style>
-            body{
-               
-            }
-        </style>
-        <meta class="UTF-8">
-    </head>
-    <body>
-     <main>
-         
-     </main>
+<head>
+
+    <style>
+        body {
+
+            background-image: url("https://wallpapercave.com/wp/YKJtSPc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 50px;
+
+
+        }
+
+        h1 {
+            color: black;
+
+            margin-top: 25px;
+        }
+
+        #description {
+            text-align: center;
+        }
+
+        #survey-form {
+            text-align: center;
+            padding: auto;
+            background-color: antiquewhite;
+            width: 40%;
+            margin: auto;
+        }
+
+        .right {
+            display: inline-block;
+            text-align: left;
+            width: 40%;
+            vertical-align: middle;
+            margin-left: 20px;
+        }
+
+        .radright {
+            float: left;
+        }
+
+        .radright1 {
+            float: left;
+
+
+        }
+
+        .radright2 {
+            float: left;
+
+        }
+
+        .radiobtns {
+            float: left;
+            margin-left: 100px;
+        }
+
+        .radioclass {
+            align-items: center;
+
+        }
+        textarea{
+            display: inline;
+        }
+        #submit {
+            display:block;
+        }
         
-    </body>
+    </style>
+    <meta class="UTF-8">
+</head>
+
+<body>
+    <main>
+
+
+        <form id="survey-form">
+            <h1 id="title">
+                User Survey Form
+            </h1>
+            <p id="description">
+                Fill Out the Form Correctly for Registrations
+            </p>
+            <label for="name-label">Name :</label>
+
+            <input type="text" class="right" required id="name" name="name" placeholder="Please Enter Your Name ">
+            <br>
+            <label for="email-label">Email:</label>
+            <input type="email" class="right" required id="email" name="email" placeholder="Please Enter Your Email ">
+            <br>
+            <label for="number-label">Number:</label>
+            <input type="number" min="1000000000" max="9999999999" class="right" required id="number" name="number"
+                placeholder="Please Enter Your Phone Number ">
+
+            <br>
+            <label for="dropdown">
+                Choose a Course :
+            </label>
+            <select class="right" name="dropdown" id="dropdown">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+                <option value="Cpp">Cpp</option>
+            </select>
+            <br>
+
+            <div class="radioclass">
+                <label class="radiobtns" for="radiobtns">
+                    Gender :
+                </label>
+                <input type="radio" class="radright" id="male" name="gender" value="male">
+                <label style="float:left" for="male">Male</label>
+                <div></div>
+                <input type="radio" class="radright1" id="female" name="gender" value="female">
+                <label style="float:left;" for="female">Female</label>
+                <div></div>
+                <input type="radio" class="radright2" id="other" name="gender" value="other">
+                <label style="float:left;" for="other">Other</label>
+            </div>
+            <br>
+            <br>
+
+            <label for="chkbox">
+                Please Select Your Fav Place at College :
+            </label>
+            <input type="checkbox" id="FE" name="year" value="FE">
+            <label for="FE">FE Canteen</label>
+            <div></div>
+            <input style="margin-left:270px;" type="checkbox" id="SE" name="year" value="SE">
+            <label for="SE">SE Canteen</label>
+            <div></div>
+            <input style="margin-left:270px;" type="checkbox" id="TE" name="year" value="TE">
+            <label for="TE">TE Canteen </label>
+
+            <br><br>
+            
+            <div style="display: block;">Hobbies : </div>
+            <textarea  placeholder="Please Enter Your Hobbies " id="txtarea"  name="hobbies" rows="6" >
+            </textarea>
+         <br>
+         <br>
+                <input type="submit" id="submitbtn" >
+        </form>
+
+    </main>
+
+</body>
+
 </html>
